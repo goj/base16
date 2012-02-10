@@ -1,1 +1,4 @@
 ebin
+deps
+rebar
+.eunit
