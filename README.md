@@ -14,7 +14,10 @@ H = base16:encode(B).
 B = base16:decode(H).
 ```
 
-Just that. No less, no more.
+Please, note:
+
+   * `base16:encode/1` uses upper-case latters.
+   * `base16:decode/1` requires the argument to be a binary of odd-number size.
 
 
 License
