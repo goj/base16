@@ -5,8 +5,8 @@ all: compile
 compile:
 	./rebar get-deps compile
 
-test:
-	./rebar skip_deps=true compile eunit
+test: compile
+	./rebar skip_deps=true eunit
 
 clean:
 	./rebar clean
