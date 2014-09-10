@@ -13,11 +13,11 @@
 %% Public API
 %%--------------------------------------------------------------------
 
--spec encode(binary()) -> binary().
+-spec encode(<<_:_*8>>) -> <<_:_*16>>.
 encode(Data) ->
     << <<(hex(N div 16)), (hex(N rem 16))>> || <<N>> <= Data >>.
 
--spec decode(binary()) -> binary().
+-spec decode(<<_:_*16>>) -> <<_:_*8>>.
 decode(Base16) when size(Base16) rem 2 =:= 0 ->
     << <<(unhex(H) bsl 4 + unhex(L))>> || <<H,L>> <= Base16 >>.
 
