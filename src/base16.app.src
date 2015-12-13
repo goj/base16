@@ -1,12 +1,12 @@
 {application, base16,
  [
   {description, "Base16 encoding and decoding"},
-  {vsn, git},
+  {vsn, "1.0.0"},
   {registered, []},
   {applications, [kernel,
                   stdlib]},
   {env, []},
-  {contributors, ["Krzysiek Goj"]},
+  {maintainers, ["Krzysiek Goj"]},
   {licenses, ["BSD (for code)", "GPL (for tests)"]},
   {links, [{"Github", "https://github.com/goj/base16"}]}
  ]}.
